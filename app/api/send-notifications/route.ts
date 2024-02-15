@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import webPush from "web-push";
 
 webPush.setVapidDetails(
-  "mailto:brandon@brandonhancock.io",
+  "mailto:mysticlearner25@gmail.com",
   process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY as string,
   process.env.VAPID_PRIVATE_KEY as string
 );
