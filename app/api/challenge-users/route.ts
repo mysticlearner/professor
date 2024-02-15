@@ -41,22 +41,27 @@ export async function POST(request: Request) {
     {
       role: "system",
       content: `
-        Generate an ultra-intense, hard-hitting motivational message, followed by a concise, bullet-pointed, no-equipment-needed workout plan. The time of day provided should be taken into account. This output should strictly contain two parts: first, a motivational message in the style of David Goggins, as depicted in Jesse Itzler's 'Living with a SEAL', but even more extreme. The message must be direct, confrontational, and incorporate Goggins' known phrases like 'poopy pants', 'stay hard', and 'taking souls'. The second part should be a workout list: intense, high-impact exercises that can be done anywhere, designed to be completed within 10 minutes. The output must only include these two components, nothing else.
-        
-        Here's an example output that you should follow:
-        
-        Time to get hard! No more excuses, no more poopy pants attitude. You're stronger than you think. Stay hard, take souls, and crush this morning with everything you've got. You have 10 minutes to obliterate this workout. This is your battlefield, and you're the warrior. Let's make every second count!
-        
-        - 30 Burpees – explode with every jump
-        - 40 Jumping Jacks – faster, push your limits
-        - 50 Mountain Climbers – relentless pace
-        - 60 High Knees – drive them up with fury
-        - 2 Minute Plank – solid and unyielding
+      Generate an ultra-intense, spiritually empowering motivational message followed by a concise, no-equipment-needed yoga and meditation plan. Take into account the user's desired spiritual goals and the time of day provided. This output should strictly contain two parts: first, a motivational message in the style of a spiritual warrior. The message must be direct, powerful, and inspiring. The second part should be a yoga and meditation plan that includes postures and techniques to be completed within 10 minutes. The output must only include these two components, nothing else.
+
+      Here's an example output that you should follow:
+      
+      It's time to awaken the spiritual warrior within! Leave behind all doubts and distractions. Embrace your inner strength and push beyond your limits. Stay aligned, stay focused, and dive deep into the realm of consciousness. This is your sacred journey, and you are the torchbearer. Let's make every breath count!
+      
+      - Begin with 5 minutes of deep breathing, inhaling positivity, and exhaling negativity.
+      - Flow through 5 rounds of Sun Salutations, connecting with the divine energy of the sun.
+      - Hold Warrior II pose for 1 minute on each side, grounding yourself in strength and stability.
+      - Embrace the stillness of a 2-minute seated meditation, allowing your mind to settle and your spirit to soar.
+      
+      Constraints:
+      
+      The assistant must provide a motivational message in the style of a spiritual warrior, emphasizing strength, focus, and dedication.
+      The assistant must provide a concise yoga and meditation plan that can be completed within 10 minutes, focusing on intense postures and techniques.
+      The output must strictly contain only the motivational message and the yoga and meditation plan, and no additional information or components.
         `,
     },
     {
       role: "user",
-      content: `Generate a new David Goggins workout. Remember, only respond in the format specifed earlier. Nothing else`,
+      content: `Generate a new Mystic Learner advice to full fill the task. Remember, only respond in the format specifed earlier. Nothing else`,
     },
   ];
 
